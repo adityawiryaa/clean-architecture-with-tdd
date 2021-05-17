@@ -1,0 +1,12 @@
+{
+  "type" : "mysql",
+  "host" : "localhost",
+  "port" : 3306,
+  "username" : "cascade",
+  "password" : "lupa1234",
+  "database" : "tdd_demo",
+  "entities" : [
+    "dist/infrastructure/persistance/typeorm/entity/*.entity{.ts,.js}"
+  ],
+  "synchronize": true
+}
