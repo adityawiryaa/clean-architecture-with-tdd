@@ -1,5 +1,4 @@
-import { Cart } from "src/core/domain/cart/cart";
-
+import { Cart } from "@domain/cart/cart";
 export interface CartRepositoryPort {
 
   getAllItem() : Promise<Cart>;

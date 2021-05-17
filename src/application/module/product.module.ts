@@ -1,9 +1,9 @@
 import { Module, Provider } from '@nestjs/common';
 import { Connection } from 'typeorm';
 import { ProductController } from '@application/controller/product.controller';
-import { ProductTokens } from 'src/core/domain/product/token';
 import { ProductRepository } from '@infrastructure/adapter/persistance/typeorm/repository/product.repository';
 import { CreateProduct } from '@infrastructure/adapter/use-case/product/create-product';
+import { ProductTokens } from '@domain/product/token';
 
 const persistanceProvider: Provider[] = [
   {

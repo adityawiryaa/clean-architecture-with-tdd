@@ -1,5 +1,6 @@
-import { Cart } from 'src/core/domain/cart/cart';
-import { CartRepositoryPort } from 'src/core/domain/cart/port/persistance/cart.repository';
+
+import { Cart } from '@domain/cart/cart';
+import { CartRepositoryPort } from '@domain/cart/port/persistance/cart.repository';
 import { EntityRepository, InsertResult, Repository } from 'typeorm';
 import { CartEntity } from '../entity/cart.entity';
 import { CartMapper } from '../mapper/cart.mapper';

@@ -1,4 +1,4 @@
-import { Product } from 'src/core/domain/product/product';
+import { Product } from "@domain/product/product";
 
 export type AddItemPayload = {
 
