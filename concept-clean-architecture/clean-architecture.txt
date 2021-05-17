@@ -1,0 +1,34 @@
+clean architecture :
+
+domain cant depends on framework
+
+- infrastructure
+  - module
+- application
+  - controller
+- use-case
+  - service
+- domain
+  - class / entity
+
+nestjs : mvc
+
+- module
+- service
+- controller
+
+
+-> domain :
+product : 
+  - id
+  - name
+  - stock
+  - price
+  - description
+
+cart : 
+  - id
+  - productId
+  - qty
+  - price
+  - subTotal
