@@ -1,5 +1,5 @@
-import { ProductRepositoryPort } from "@domain/product/port/persistance/product.repository";
-import { Product } from "@domain/product/product";
+import { ProductRepositoryPort } from "src/core/domain/product/port/persistance/product.repository";
+import { Product } from "src/core/domain/product/product";
 import { EntityRepository, InsertResult, Repository } from "typeorm";
 import { ProductEntity } from "../entity/product.entity";
 import { ProductMapper } from '../mapper/product.mapper';

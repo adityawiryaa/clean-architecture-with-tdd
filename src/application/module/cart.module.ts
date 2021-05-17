@@ -1,13 +1,11 @@
-import { ProductRepository } from '@infrastructure/persistance/typeorm/repository/product.repository';
 import { Module, Provider } from '@nestjs/common';
 import { Connection } from 'typeorm';
-import { CreateProduct } from '@use-case/product/create-product';
-import { ProductController } from '@application/controller/product.controller';
-import { AddItem } from '@use-case/cart/add-item';
-import { CartRepository } from '@infrastructure/persistance/typeorm/repository/cart.repository';
 import { CartController } from '@application/controller/cart.controller';
-import { CartTokens } from '@domain/cart/token';
-import { ProductTokens } from '@domain/product/token';
+import { CartTokens } from 'src/core/domain/cart/token';
+import { ProductTokens } from 'src/core/domain/product/token';
+import { ProductRepository } from '@infrastructure/adapter/persistance/typeorm/repository/product.repository';
+import { CartRepository } from '@infrastructure/adapter/persistance/typeorm/repository/cart.repository';
+import { AddItem } from '@infrastructure/adapter/use-case/cart/add-item';
 
 const persistanceProvider: Provider[] = [
   {

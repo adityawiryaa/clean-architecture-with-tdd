@@ -1,7 +1,7 @@
+import { CreateProduct } from "@infrastructure/adapter/use-case/product/create-product";
 import { Body, Controller, Inject, Post } from "@nestjs/common";
-import { CreateProductPort } from '@domain/product/port/use-case/create-product';
-import { CreateProduct } from '@use-case/product/create-product';
-import { ProductTokens } from "@domain/product/token";
+import { CreateProductPort } from 'src/core/domain/product/port/use-case/create-product';
+import { ProductTokens } from "src/core/domain/product/token";
 
 
 @Controller('product')

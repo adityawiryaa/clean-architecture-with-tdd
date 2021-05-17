@@ -1,7 +1,7 @@
-import { Product } from "@domain/product/product"
+import { Product } from "@domain/product/product";
+import { Exception } from "@libs/common/exception";
+import { Code } from "@libs/common/code";
 import { CreateProductPayload } from "@domain/product/type/create-product";
-import { Exception } from '@libs/common/exception';
-import { Code } from '@libs/common/code';
 
 describe('domain/product', () => {
 

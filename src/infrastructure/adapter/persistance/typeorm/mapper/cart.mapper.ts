@@ -1,8 +1,8 @@
 import { CartEntity } from "../entity/cart.entity";
-import { Cart } from '@domain/cart/cart';
-import { Product } from '@domain/product/product';
 import { ProductMapper } from "./product.mapper";
 import { ProductEntity } from "../entity/product.entity";
+import { Cart } from "@domain/cart/cart";
+import { Product } from "@domain/product/product";
 
 export class CartMapper {
 

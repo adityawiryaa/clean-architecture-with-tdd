@@ -1,4 +1,4 @@
-import { Product } from "@domain/product/product";
+import { Product } from "src/core/domain/product/product";
 
 export interface ProductRepositoryPort {
 

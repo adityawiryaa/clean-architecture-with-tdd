@@ -1,10 +1,10 @@
-import { CreateProductPort } from "@domain/product/port/use-case/create-product";
-import { CreateProduct } from "@use-case/product/create-product";
-import { Product } from '@domain/product/product';
 import { Test, TestingModule } from '@nestjs/testing';
-import { ProductRepository } from '@infrastructure/persistance/typeorm/repository/product.repository';
+import { ProductRepository } from "@infrastructure/adapter/persistance/typeorm/repository/product.repository";
+import { CreateProduct } from "@infrastructure/adapter/use-case/product/create-product";
+import { Product } from "@domain/product/product";
 import { ProductRepositoryPort } from '@domain/product/port/persistance/product.repository';
-import { ProductTokens } from "@domain/product/token";
+import { ProductTokens } from '@domain/product/token';
+import { CreateProductPort } from '@domain/product/port/use-case/create-product';
 
 describe('use-case/create-product', () => {
 

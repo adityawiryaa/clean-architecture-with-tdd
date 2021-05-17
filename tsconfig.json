@@ -12,11 +12,11 @@
     "baseUrl": "./",
     "incremental": true,
     "paths": {
-      "@domain/*" : ["src/domain/*"],
+      "@domain/*" : ["src/core/domain/*"],
       "@application/*": ["src/application/*"],
       "@infrastructure/*": ["src/infrastructure/*"],
-      "@libs/*": ["src/libs/*"],
-      "@use-case/*": ["src/use-case/*"],
+      "@libs/*": ["libs/*"],
+      "@use-case/*": ["src/infrastructure/adapter/use-case/*"],
       "@test/*":["test/*"]
     },
   }

@@ -1,14 +1,14 @@
-import { Product } from '@domain/product/product';
-import { AddItemPort } from '@domain/cart/port/use-case/add-item';
-import { Cart } from '@domain/cart/cart';
-import { AddItem } from '@use-case/cart/add-item';
 import { Test, TestingModule } from '@nestjs/testing';
+import { AddItem } from '@infrastructure/adapter/use-case/cart/add-item';
+import { ProductRepository } from '@infrastructure/adapter/persistance/typeorm/repository/product.repository';
+import { CartRepository } from '@infrastructure/adapter/persistance/typeorm/repository/cart.repository';
+import { Product } from '@domain/product/product';
+import { Cart } from '@domain/cart/cart';
 import { ProductRepositoryPort } from '@domain/product/port/persistance/product.repository';
-import { ProductRepository } from '@infrastructure/persistance/typeorm/repository/product.repository';
-import { CartRepository } from '@infrastructure/persistance/typeorm/repository/cart.repository';
 import { CartRepositoryPort } from '@domain/cart/port/persistance/cart.repository';
-import { CartTokens } from '@domain/cart/token';
 import { ProductTokens } from '@domain/product/token';
+import { CartTokens } from '@domain/cart/token';
+import { AddItemPort } from '@domain/cart/port/use-case/add-item';
 
 describe('use-case/cart' , () => {
   

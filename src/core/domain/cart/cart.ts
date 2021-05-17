@@ -1,8 +1,8 @@
 import { CreateCartPayload } from './type/create-cart';
 import { AddItemPayload } from './type/add-item';
-import { Product } from '@domain/product/product';
 import { Exception } from '@libs/common/exception';
 import { Code } from '@libs/common/code';
+import { Product } from '@domain/product/product';
 
 export class Cart {
   

@@ -1,12 +1,12 @@
-import { Product } from "@domain/product/product";
-import { ProductRepository } from '@infrastructure/persistance/typeorm/repository/product.repository';
 import { Test, TestingModule } from "@nestjs/testing";
 import { SinonSandbox, createStubInstance, createSandbox, spy } from 'sinon';
 import { getConnection, getRepository, InsertQueryBuilder } from "typeorm";
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { ProductEntity } from "@infrastructure/persistance/typeorm/entity/product.entity";
-import { ProductMapper } from "@infrastructure/persistance/typeorm/mapper/product.mapper";
-import { CartEntity } from "@infrastructure/persistance/typeorm/entity/cart.entity";
+import { ProductRepository } from "@infrastructure/adapter/persistance/typeorm/repository/product.repository";
+import { ProductEntity } from "@infrastructure/adapter/persistance/typeorm/entity/product.entity";
+import { CartEntity } from "@infrastructure/adapter/persistance/typeorm/entity/cart.entity";
+import { ProductMapper } from "@infrastructure/adapter/persistance/typeorm/mapper/product.mapper";
+import { Product } from "@domain/product/product";
 import { ProductTokens } from "@domain/product/token";
 
 
